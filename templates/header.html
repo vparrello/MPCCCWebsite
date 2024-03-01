@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="Copyright © 2024, Mount Prospect Child Care Center, Inc. All Rights Reserved" name="copyright" />
+	<title>Mount Prospect Child Care Center Home</title>
+	 <!-- My CSS -->
+    <link rel="stylesheet" href="static/css/styles.css">
+    <!-- Favicon -->
+    <link rel="icon" href="static/images/favicon-16x16.png">
+	<!--FontAwesome: This gives icons to the website-->
+    <script src="https://kit.fontawesome.com/45152c50e4.js" crossorigin="anonymous"></script>
+	<!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<!-- #EndEditable -->
+<body>
+<!-- Page Container begins here -->
+<div id="outerWrapper">
+	<!-- Masthead begins here -->
+	<div id="header">
+	<table width="100%">
+	<tr>
+		<td valign="top" align="center"><img src="static/images/mpccclogo.jpg" /></td>
+		<td valign="top" align="center"><img src="static/images/centerlogo.jpg" /></td>
+		<td valign="top" align="center">
+		<img src="static/images/rightlogo.jpg" usemap="#rightlogo" border="0" /></td>
+	</tr>
+	</table>
+	<map name="rightlogo">
+	  <area shape="rect" coords="0,172,119,197" href="mailto:info@mpccc.net"  alt="Send email" />
+	</map>
+	</div>
+	<!-- Masthead ends here -->
+	<!-- Navigation begins here -->
+	<nav class="navbar navbar-expand-md">
+		<div class="container-fluid justify-content-center">
+			<div class="navbar-nav">
+				<li><a class="nav-item nav-link" href="{{ url_for('index') }}" title="Home">Home</a></li>
+				<li class="dropdown nav-item">
+					<a class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="navbarAboutDropdown" aria-haspopup="true" title="About" aria-expanded="false">About</a>
+					<div class="dropdown-menu" aria-labelledby="navbarAboutDropdown">
+						<a class="dropdown-item" href="{{ url_for('about') }}" title="About">About</a>
+						<a class="dropdown-item" href="{{ url_for('ourstaff') }}" title="About">Our Staff</a>
+					</div>
+				</li>
+				<li class="dropdown nav-item">
+					<a class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="navbarProgramsDropdown" aria-haspopup="true" title="Programs" aria-expanded="false">Programs</a>
+					<div class="dropdown-menu" aria-labelledby="navbarProgramsDropdown">
+						<a class="dropdown-item" href="{{ url_for('programs') }}" title="Programs">All Programs</a>
+						<a class="dropdown-item" href="{{ url_for('programs') }}#Toddlers" title="Programs">Toddlers</a>
+						<a class="dropdown-item" href="{{ url_for('programs') }}#2yearolds" title="Programs">2 Year Olds</a>
+						<a class="dropdown-item" href="{{ url_for('programs') }}#Preschool" title="Programs">Pre-School</a>
+						<a class="dropdown-item" href="{{ url_for('programs') }}#Kindergarten" title="Programs">Kindergarten B/A Care</a>
+						<a class="dropdown-item" href="{{ url_for('programs') }}#1st2ndGrade" title="Programs">1st/2nd Grade B/A Care</a>
+						<a class="dropdown-item" href="{{ url_for('programs') }}#SummerCamp" title="Programs">Summer Camp</a>
+					</div>
+				<li><a class="nav-item nav-link" href="{{ url_for('calendar') }}" title="Calendar">Calendar</a></li>
+				<li class="nav-item dropdown">
+					<a class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="navbarCurrentParentsDropdown" aria-haspopup="true" aria-expanded="false" title="For Current Parents">For Current Parents</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarCurrentParentsDropdown">
+						<a class="dropdown-item" href="{{ url_for('currentparents') }}" title="CurrentParents">Information</a>
+						<a class="dropdown-item" href="static/documents/menu current.pdf" target="_blank" title="CurrentParents">Menu</a>
+						<a class="dropdown-item" href="static/documents/MPCCC PARENT HANDBOOK.pdf" title="CurrentParents">Policy Handbook</a>
+						<a class="dropdown-item" href="http://mpccc.shutterfly.com/" target="_blank" title="CurrentParents">Pictures</a>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="navbarProspectiveParentsDropdown" aria-haspopup="true" aria-expanded="false" title="For Prospective Parents">For Prospective Parents</a>
+					<ul class="dropdown-menu">
+						<a class="dropdown-item" href="{{ url_for('prospectiveparents') }}" title="ProspectiveParents">Tuition</a>
+						<a class="dropdown-item" href="{{ url_for('faq') }}" title="ProspectiveParents">FAQ</a>
+						<a class="dropdown-item" href="static/documents/DAILY SCHEDULE OF ACTIVITIES.pdf" target="_blank" title="ProspectiveParents">Daily Schedule</a>
+						<a class="dropdown-item" href="static/documents/long enrollment form.pdf" target="_blank" title="ProspectiveParents">Enrollment Form</a>
+					</ul>
+				</li>
+				<li><a class="nav-item nav-link" href="{{ url_for('resources') }}" title="Resources">Resources</a></li>
+			</div>
+		</div>
+	</nav>
+	<!-- Navigation ends here -->

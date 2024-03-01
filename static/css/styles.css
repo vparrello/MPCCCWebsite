@@ -1,0 +1,155 @@
+/* Colors
+Purple: #810081
+Light blue: #4095df
+Darker light blue: #4870aa
+Solid Blue: #2170bd
+Vibrant Blue: #039
+Dark gray: #353c48
+White: #ffffff
+Bright Yellow: #feff00
+Ivory: #eaeff5
+*/
+
+/* Fonts
+	paragraph text = font-family: Arial, Helvetica, sans-serif;
+	Headers text = font-family: "Palatino Linotype", Georgia, "Times New Roman", Times, serif;
+*/
+
+p{
+    color: #810081;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+i {
+    font-size: 25px;
+    padding-right: 15px;
+    color: #810081;
+}
+img {
+    height: 33%;
+    width: 90%;
+    padding: 10px;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #810081;
+    color: #feff00;
+    display: inline;
+}
+.nav-link {
+    color: #feff00;
+    padding-top: 10px;
+}
+.nav-item:hover {
+    background-color: #700070;
+    color: #feff00;
+}
+/* Nav bar dropdowns. The first is the background of the menu. The second is the font color. The third is when you hover over it. */
+.navbar-nav > li > .dropdown-menu {
+    background-color: #810081;
+}
+
+.navbar-nav > li > .dropdown-menu a{
+    color: #feff00;
+}
+.navbar-nav > li > .dropdown-menu a:hover{
+    background-color: #700070;
+}
+
+/* Index Page */
+
+.title {
+   font-family: "Palatino Linotype", Georgia, "Times New Roman", Times, serif;
+   color: #810081;
+   font-weight: bold;
+   text-align: center;
+   padding-top: 15px;
+}
+.subheading {
+    color: #810081;
+	text-align: center;
+	font-weight: bold;
+    padding-bottom: 5px;
+}
+
+#bordered-column {
+    border-style: solid;
+}
+
+/* Text formatting for pages */
+.title-left {
+    text-align: left;
+    font-family: "Palatino Linotype", Georgia, "Times New Roman", Times, serif;
+    color: #810081;
+    font-weight: bold;
+    padding: 30px 0px 15px 40px;
+}
+.subheading-left {
+    text-align: left;
+    color: #810081;
+    font-weight: bold;
+    padding: 10px 0px 0px 35px;
+}
+.text-left {
+    text-align: left;
+    color: #810081;
+    margin-left: 35px;
+}
+/* Programs page */
+
+.programimg {
+    width: 600px;
+    height: 400px;
+}
+
+.programlinks {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Current Parents */
+
+.parentsimg {
+    height: 300px;
+    width: 450px;
+}
+
+/* FAQ Page */
+
+ol {
+    text-align: left;
+    margin-left: 20px;
+    color: #810081;
+    font-weight: bold;
+}
+
+.answer {
+    font-weight: normal;
+    text-align: left;
+    padding: 15px 10px 0px 0px;
+}
+.answer-item {
+    font-weight: normal;
+    text-align: left;
+}
+
+/* Resources page */
+
+.resource {
+    text-align: left;
+    color: #810081;
+    margin-left: 35px;
+    font-weight: bold;
+}
+
+/* Footer content */
+.footerimg {
+    width: 100px;
+}
+.footer-container {
+    border-style: ridge none none none;
+    background-color: #eaeff5;
+    padding: 10px 10px 0px 10px;
+}
